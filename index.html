@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME 7: Scrambled Words</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <section class="title-screen" id="title-screen">
+        <div class="title-text stroke-text">benildean students' day</div>
+        <div class="game-title stroke-text">game 7 </br> scrambled words</div>
+        <button class="start-btn layer" id="start-btn" onclick="startButton()"> START </button>
+    </section>
+    
+    <div class="game-board" id="game-board">
+        <div class="heading" id="heading">
+            <div class="title-text stroke-text game-name">game 7 <br> scrambled words</div>
+            <div id="timer" class="timer">timer: 0</div>
+        </div>
+
+        <div class="question" id="question"> numeit emair allh </div>
+        <input class="inputbox" id="inputbox" type="text" placeholder="answer here" onkeyup="this.value = this.value.toLowerCase()"><br> 
+        <button class="submit-btn layer" id="submit-btn" onclick="checkAnswer()"> SUBMIT </button>
+    </div>
+
+  </body>
+</html>
